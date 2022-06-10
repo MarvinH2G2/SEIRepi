@@ -17,6 +17,15 @@ g++ seir.cc -UCOVID_PARAMS -o seir_paper
 gnuplot paper-fig6.gnu
 ```
 
+The code runs for 1000 years, then prints the time evolution for 40 years.
+
+Figure 6b) is a limit cycle of the the SEIR system, a repeating pattern it falls into
+after long time evolution (1000 years is enough for early transient initial to die away).
+
+The 'orbit' in Infected vs Susceptible is complicated, but repeats itself periodically with
+several period doublings. This process of period doubling bifurcation
+up to a limit where chaos sets in a common attribute of chaotic systems.
+
 2) edit seir.cc and set beta_1 line 93 to zero
 Predicted steady state (no-seasonality) is an algebraic prediction, printed as S0, E0, I0 etc...
 
