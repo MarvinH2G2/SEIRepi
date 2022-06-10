@@ -43,3 +43,12 @@ g++ seir.cc -DCOVID_PARAMS -o seir_covid
 gnuplot covid.gnu
 ```
 
+I increased beta_1 all the way to 1 without seeing period doubling for waning time constants at 3 months, 6 months, 12 months.
+
+Good news: no evidence of chaos with reasonable covid waning
+
+Bad news: this looks to be because waning is so fast there is always a reasonable pool of susceptible and persistent rates of infection.
+
+Note: waning time is an input to the model. Garbage in garbage out caveats apply, but immunity waning is now established.
+
+
